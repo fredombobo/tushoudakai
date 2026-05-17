@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>雾时提醒隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7fbfc;
+      --fg: #172030;
+      --muted: #5a6878;
+      --panel: rgba(255, 255, 255, 0.72);
+      --border: rgba(93, 107, 128, 0.18);
+      --accent: #245d6b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b111a;
+        --fg: #eef5f7;
+        --muted: #b4c3cc;
+        --panel: rgba(47, 66, 87, 0.42);
+        --border: rgba(154, 221, 234, 0.28);
+        --accent: #9addea;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "HarmonyOS Sans", "Segoe UI", sans-serif;
+      line-height: 1.75;
+      color: var(--fg);
+      background: radial-gradient(circle at 20% 10%, rgba(120, 200, 216, 0.18), transparent 30%),
+        linear-gradient(160deg, var(--bg), rgba(53, 126, 141, 0.14));
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--panel);
+      backdrop-filter: blur(22px);
+      box-shadow: 0 18px 46px rgba(23, 32, 48, 0.16);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+    h2 {
+      margin-top: 28px;
+      font-size: 1.18rem;
+    }
+    p, li {
+      color: var(--muted);
+    }
+    strong {
+      color: var(--fg);
+    }
+    .date {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>雾时提醒隐私政策</h1>
+    <p class="date">生效日期：2026-05-16</p>
+    <p>雾时提醒是一款本地轻量提醒应用，用于创建、保存和触发系统提醒。</p>
+
+    <h2>我们收集的信息</h2>
+    <ul>
+      <li>提醒内容、提醒日期和时间、声音与振动开关、创建时间、提醒状态。</li>
+      <li>当你主动使用语音输入时，应用会请求麦克风权限，将语音转换为提醒文字。</li>
+    </ul>
+
+    <h2>信息如何使用</h2>
+    <ul>
+      <li>提醒数据仅用于本机展示、编辑、取消和系统后台代理提醒。</li>
+      <li>麦克风仅在你点击语音输入时使用，不会在后台录音。</li>
+      <li>应用不提供账号登录、广告投放、云同步或第三方数据分析。</li>
+    </ul>
+
+    <h2>本地存储</h2>
+    <p>提醒记录和设置保存在设备本地 Preferences 中。卸载应用后，本地数据会随应用数据清除。</p>
+
+    <h2>权限说明</h2>
+    <ul>
+      <li><strong>后台代理提醒权限：</strong>用于在设定时间由系统弹出提醒。</li>
+      <li><strong>麦克风权限：</strong>用于语音转文字输入。</li>
+      <li><strong>振动权限：</strong>用于提醒到点时跟随系统振动反馈。</li>
+    </ul>
+
+    <h2>数据共享</h2>
+    <p>雾时提醒不主动向开发者服务器上传提醒内容，不出售或共享个人信息。</p>
+
+    <h2>联系方式</h2>
+    <p>上架前请将此处替换为正式开发者邮箱，并发布为公开可访问的隐私政策 URL。</p>
+  </main>
+</body>
+</html>
